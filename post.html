@@ -1,0 +1,116 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+  <meta charset="UTF-8">
+  <meta name="viewport" content="width=device-width, initial-scale=1.0">
+  <title>Responsive Profile Page</title>
+  <script src="https://cdn.tailwindcss.com"></script>
+</head>
+<body class="bg-gray-900 text-white">
+
+  <!-- Page Layout -->
+  <div class="flex flex-col lg:flex-row">
+    <!-- Sidebar -->
+    <aside class="w-full lg:w-1/5 bg-gray-800 min-h-screen p-4 hidden lg:block">
+      <nav class="space-y-4">
+        <a href="#" class="block text-lg font-medium hover:text-blue-500">Feed</a>
+        <a href="#" class="block text-lg font-medium hover:text-blue-500">Notifications</a>
+        <a href="#" class="block text-lg font-medium hover:text-blue-500">Communities</a>
+        <a href="#" class="block text-lg font-medium hover:text-blue-500">Saved Posts</a>
+        <a href="#" class="block text-lg font-medium hover:text-blue-500">Premium</a>
+        <a href="#" class="block text-lg font-medium hover:text-blue-500">Profile</a>
+        <button class="w-full bg-blue-700 py-2 rounded-xl text-center hover:bg-blue-600">Post</button>
+      </nav>
+    </aside>
+
+    <!-- Main Content -->
+    <main class="w-full lg:w-3/5 p-4 space-y-6">
+      <!-- Profile Header -->
+       <div class="relative">
+        <img class="w-full h-48 object-cover rounded-t-lg" src="https://s3-alpha-sig.figma.com/img/d2a4/a34b/b611fe988ada71f96b851594c8957e4a?Expires=1738540800&Key-Pair-Id=APKAQ4GOSFWCVNEHN3O4&Signature=WtCaoKoChI7V8irFxnOIpF1E3BAaS4GW2IY5SqlqOr2hc8oA-tuiSuIXKVmG7Qi-FahHTXq6CSI20xpt6Ec4MOEpO49V6KVDBJdwPJyitW4ZMeixgOiEKI38QdrFwlfI3NZ37zDuqWhb5FBj1xM~tjNoxyUBgyyU2fJcrnVEjkvtC84afUMDH4FCD4hoee6EgrRXgKdbi4PS7--GUUlRiDqt-8AyEDOoYK2c66Ug9agmCqzMJ~ipU71Kl5wUOOeqBlYN5CP8fJTPCg1FzkgSGCuNQSt3~Vos8JbflPsIU8gBApfOe4Eo71cMgnNhSRvBtbucP8nmaomi1on737bzsg__">
+      <div class="bg-gray-800 p-6 rounded-lg">
+        <div class="flex flex-col md:flex-row items-center md:items-start space-y-4 md:space-y-0 md:space-x-4">
+          <img class="w-24 h-24 rounded-full border-4 border-gray-900" src="https://s3-alpha-sig.figma.com/img/9887/2f32/3c896a47d0c8fd5a6cd677eb956e1a69?Expires=1738540800&Key-Pair-Id=APKAQ4GOSFWCVNEHN3O4&Signature=JqXQ-tleynZTNOCy6B5z1pS5WBFbeaLFi8vIUty6jYYaBSvz5oaKgWnVS4vSqppBdBXjQ2batDUdX8cUtXVLlZzcsutUsvB-yEpzfNIF2ehSbZtFs1D2zZCM~R13wIqBPmjhZADUGMYGJhsMV9IIRzlhu-6Paj~Ae47yDLF21N-lvZUkM2A74uUyYB5K3dlcbiWdXjeqhTy9OaGtI5OtUXw~-mfZDHId0rtqfzK3u7PClST3n4qYntdsgYE-xK7brEZ9TSYEhBL89yAQ-wI7T496Z57ZZ7tZKjryGOgxsGB68wXX8d5ysif1DojWst808Vca3EkPF3psPbgiA6qBFQ__" alt="Profile">
+          <div class="text-center md:text-left">
+            <h1 class="text-2xl font-bold">XENOS112</h1>
+            <p>@xeno2_112</p>
+            <p class="text-gray-400">Joined Since 2025-01</p>
+          </div>
+        </div>
+
+          <button class="bg-blue-700 px-4 py-2 rounded-xl hover:bg-blue-600 mt-4 md:mt-0 md:ml-auto">Follow</button>
+        </div>
+      </div>
+
+      <!-- Tabs -->
+      <div class="flex justify-around border-b border-gray-700">
+        <a href="#" class="pb-2 border-b-2 border-blue-500 text-blue-500">Posts</a>
+        <a href="#" class="pb-2 text-gray-400 hover:text-white">Communities</a>
+        <a href="#" class="pb-2 text-gray-400 hover:text-white">Friends</a>
+      </div>
+
+      <!-- Posts -->
+      <div class="bg-gray-800 p-6 rounded-lg space-y-4">
+        <div>
+          <div class="flex items-center space-x-4">
+            <img src="https://s3-alpha-sig.figma.com/img/9887/2f32/3c896a47d0c8fd5a6cd677eb956e1a69?Expires=1738540800&Key-Pair-Id=APKAQ4GOSFWCVNEHN3O4&Signature=JqXQ-tleynZTNOCy6B5z1pS5WBFbeaLFi8vIUty6jYYaBSvz5oaKgWnVS4vSqppBdBXjQ2batDUdX8cUtXVLlZzcsutUsvB-yEpzfNIF2ehSbZtFs1D2zZCM~R13wIqBPmjhZADUGMYGJhsMV9IIRzlhu-6Paj~Ae47yDLF21N-lvZUkM2A74uUyYB5K3dlcbiWdXjeqhTy9OaGtI5OtUXw~-mfZDHId0rtqfzK3u7PClST3n4qYntdsgYE-xK7brEZ9TSYEhBL89yAQ-wI7T496Z57ZZ7tZKjryGOgxsGB68wXX8d5ysif1DojWst808Vca3EkPF3psPbgiA6qBFQ__" alt="User" class="w-10 h-10 rounded-full">
+            <div>
+              <h2 class="font-medium">Xenos</h2>
+              <p class="text-gray-400">@_xenos_ • a year ago</p>
+            </div>
+          </div>
+          <p class="mt-4">Lorem Ipsum is simply dummy text of the printing and typesetting industry...</p>
+          <img src="https://s3-alpha-sig.figma.com/img/a1d9/b478/81de255d6143cd88f9680a8c6dc61ddf?Expires=1738540800&Key-Pair-Id=APKAQ4GOSFWCVNEHN3O4&Signature=Y4E1o8oINNtnPqwlYQFA0hlZlArSw3iJHFeVVz~OuD7iJ46GuWMPBiZgHn-aQ~jFnS3ykdP5th6xodc-Nbvs9kT7eWjq9eFXjxcJ4x9mogkcKDZNqvvy5xTODuTA0xDCNjhVJ-MNQWlIcirFs8P7-9y2g0Hz9Wncha1qDNJg3JwnDEZseZUJ4TsZd8TT5nZKiTjwUnMrU~1TEMPAhteE6B9TQ41B6hP56VAm-AvB~AOh78HD9IZGYGaATUGd4znqAybxTqDNRklwxCi6O1ic~EuDCyLaung5kmiGu0nq-N-8Yxa3MEBTmBAj3b11JHf9sS8-b~7WB1jAFoe1nHDV8w__"alt="Post Image" class="rounded-lg mt-4 w-full">
+          <div class="flex justify-between text-gray-400 mt-4">
+            <p>12K Likes</p>
+            <p>3K Comments</p>
+            <p>4K Shares</p>
+          </div>
+        </div>
+      </div>
+    </main>
+
+    <!-- Right Sidebar -->
+    <aside class="w-full lg:w-1/5 bg-gray-900 min-h-screen p-4 hidden lg:block">
+      <!-- Search Bar -->
+      <input type="text" placeholder="Search..." class="w-full bg-gray-800 rounded-md p-2 mb-6">
+
+      <!-- Premium Section -->
+      <div class="bg-gray-800 p-4 rounded-lg mb-6">
+        <h3 class="text-lg font-medium">Get The Full Experience</h3>
+        <p>Enjoy the full power with the Premium subscription</p>
+        <button class="bg-blue-700 mt-4 w-full py-2 rounded-md hover:bg-gray-800">Subscribe</button>
+      </div>
+
+      <!-- Who to Follow -->
+      <div class="space-y-4 mb-6 rounded-lg bg-gray-800 p-2">
+        <h3 class="font-medium text-lg">Who To Follow</h3>
+        <div class="flex justify-between items-center">
+          <p>Placeholder</p>
+          <button class="bg-blue-700 px-3 py-1 rounded-md hover:bg-blue-600">Follow</button>
+        </div>
+        <div class="flex justify-between items-center">
+          <p>Placeholder</p>
+          <button class="bg-blue-700 px-3 py-1 rounded-md hover:bg-blue-600">Follow</button>
+        </div>
+        <div class="flex justify-between items-center">
+          <p>Placeholder</p>
+          <button class="bg-blue-700 px-3 py-1 rounded-md hover:bg-blue-600">Follow</button>
+        </div>
+      </div>
+
+      <!-- Communities to Join -->
+      <div class="space-y-4 rounded-lg bg-gray-800 p-2">
+        <h3 class="font-medium text-lg">Communities To Join</h3>
+        <div class="flex justify-between items-center">
+          <p>Web</p>
+          <button class="bg-blue-700 px-3 py-1 rounded-md hover:bg-blue-600">Join</button>
+        </div>
+        <div class="flex justify-between items-center">
+          <p>Design</p>
+          <button class="bg-blue-700 px-3 py-1 rounded-md hover:bg-blue-600">Join</button>
+        </div>
+        <div class="flex justify-between items-center">
+          <p>Editing</p>
+          <button class="bg-blue-700 px-3 py-1 rounded-md hover:bg-blue-600">Join</button>
+        </div>
